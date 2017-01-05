@@ -1,0 +1,21 @@
+{
+  "name": "elastic_postmark",
+  "version": "0.0.1",
+  "description": "Elastic components for Postmark integration",
+  "main": "index.js",
+  "engines": {
+    "node": "7.0.0"
+  },
+  "scripts": {
+    "test": "jasmine"
+  },
+  "author": "Matalan Direct",
+  "license": "ISC",
+  "devDependencies": {
+    "jasmine": "^2.5.2",
+    "nock": "^9.0.2"
+  },
+  "dependencies": {
+    "node-fetch": "^1.6.3"
+  }
+}

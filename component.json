@@ -1,0 +1,19 @@
+{
+  "title": "Postmark",
+  "description": "Postmark components for the elastic.io platform",
+  "credentials": {
+    "fields": {
+      "serverToken": {
+        "label": "Electio API key",
+        "required": true,
+        "viewClass": "TextFieldView"
+      },
+      "postmarkHost": {
+        "label": "Postmark host",
+        "required": true,
+        "viewClass": "TextFieldView"
+      }
+    }
+  },
+  "actions": {}
+}
