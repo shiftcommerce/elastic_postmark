@@ -15,5 +15,17 @@
       }
     }
   },
-  "actions": {}
+  "actions": {
+    "sendDeliveryDateEmail": {
+      "main": "./lib/actions/sendDeliveryDateEmail.js",
+      "title": "Send delivery date email",
+      "fields": {
+        "from": {
+          "label": "From address",
+          "viewClass": "TextFieldView",
+          "required": true
+        }
+      }
+    }
+  }
 }

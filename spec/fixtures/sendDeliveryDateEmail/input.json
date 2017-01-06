@@ -1,0 +1,637 @@
+{
+  "vms": {
+    "getVendorsByReference": {
+      "leadTimes": {
+        "POS": 1,
+        "LPD": 3
+      }
+    }
+  },
+  "elasticCustomSFTP": {
+    "readFiles": {
+      "filePath": "/orders/MD_Sales_050117163758.csv",
+      "fileContents": "1 FAKE STREET,MANCHESTER,,,UK,M23 1NL,55.00,1,5036464046488,7653114945,LPD,hubert.pompecki+oversized@matalandirect.com,MRS,JANE,SMITH,0123456789,140,6746,10,1,05/01/2017,03\n1 FAKE STREET,MANCHESTER,,,UK,M23 1NL,14.99,1,5060468909838,25926895559,DeliveryType,hubert.pompecki+oversized@matalandirect.com,MRS,JANE,SMITH,0123456789,140,6746,10,2,05/01/2017,03\n"
+    }
+  },
+  "currentMessage": {
+    "orders": [
+      {
+        "customer": {
+          "default_address": {
+            "default": true,
+            "country_name": "United Kingdom",
+            "country_code": "GB",
+            "province_code": null,
+            "name": "MRS JANE SMITH",
+            "phone": "0123456789",
+            "zip": "M23 1NL",
+            "country": "United Kingdom",
+            "province": null,
+            "city": ".",
+            "address2": "MANCHESTER",
+            "address1": "1 FAKE STREET",
+            "company": null,
+            "last_name": "SMITH",
+            "first_name": "JANE",
+            "id": 5949526663
+          },
+          "last_order_name": "MATDIR21302",
+          "tags": "",
+          "tax_exempt": false,
+          "multipass_identifier": null,
+          "verified_email": true,
+          "note": null,
+          "last_order_id": 5033306055,
+          "total_spent": "69.99",
+          "state": "disabled",
+          "orders_count": 1,
+          "last_name": "SMITH",
+          "first_name": "MRS JANE",
+          "updated_at": "2017-01-05T17:04:11+00:00",
+          "created_at": "2017-01-05T17:04:10+00:00",
+          "accepts_marketing": false,
+          "email": "hubert.pompecki+oversized@matalandirect.com",
+          "id": 5821644551
+        },
+        "refunds": [],
+        "fulfillments": [],
+        "shipping_address": {
+          "province_code": null,
+          "country_code": "GB",
+          "name": "MRS JANE SMITH",
+          "longitude": null,
+          "latitude": null,
+          "company": null,
+          "address2": "MANCHESTER",
+          "last_name": "SMITH",
+          "country": "United Kingdom",
+          "province": null,
+          "zip": "M23 1NL",
+          "city": ".",
+          "phone": "0123456789",
+          "address1": "1 FAKE STREET",
+          "first_name": "MRS JANE"
+        },
+        "shipping_lines": [
+          {
+            "tax_lines": [],
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "requested_fulfillment_service_id": null,
+            "phone": null,
+            "source": "pos_mat",
+            "code": "OVERSIZED",
+            "price": "14.99",
+            "title": "Standard large parcel delivery",
+            "id": 4165901383
+          }
+        ],
+        "line_items": [
+          {
+            "tax_lines": [],
+            "fulfillment_status": null,
+            "total_discount": "0.00",
+            "fulfillable_quantity": 1,
+            "product_exists": true,
+            "properties": [
+              {
+                "value": "1",
+                "name": "TransactionLineNumber"
+              }
+            ],
+            "variant_inventory_management": "shopify",
+            "name": "Quinn Corner Bookcase - Oak",
+            "gift_card": false,
+            "taxable": true,
+            "requires_shipping": true,
+            "product_id": 2321455809,
+            "fulfillment_service": "manual",
+            "vendor": "LPD",
+            "variant_title": null,
+            "sku": "EGLTIVCOROAK",
+            "grams": 0,
+            "price": "55.00",
+            "quantity": 1,
+            "title": "Quinn Corner Bookcase - Oak",
+            "variant_id": 7653114945,
+            "id": 9476018311
+          },
+          {
+            "tax_lines": [],
+            "fulfillment_status": null,
+            "total_discount": "0.00",
+            "fulfillable_quantity": 1,
+            "product_exists": true,
+            "properties": [
+              {
+                "value": "2",
+                "name": "TransactionLineNumber"
+              }
+            ],
+            "variant_inventory_management": null,
+            "name": "Standard large parcel delivery",
+            "gift_card": false,
+            "taxable": true,
+            "requires_shipping": false,
+            "product_id": 8114979975,
+            "fulfillment_service": "manual",
+            "vendor": "DeliveryType",
+            "variant_title": null,
+            "sku": "OVERSIZED",
+            "grams": 0,
+            "price": "0.00",
+            "quantity": 1,
+            "title": "Standard large parcel delivery",
+            "variant_id": 25926895559,
+            "id": 9476018375
+          }
+        ],
+        "order_status_url": null,
+        "contact_email": "hubert.pompecki+oversized@matalandirect.com",
+        "tags": "",
+        "tax_lines": [],
+        "fulfillment_status": null,
+        "source_name": "pos_mat",
+        "checkout_id": null,
+        "processing_method": "",
+        "payment_gateway_names": [
+          "pos_mat"
+        ],
+        "note_attributes": [
+          {
+            "value": "6746",
+            "name": "TransactionNumber"
+          },
+          {
+            "value": "05/01/2017",
+            "name": "TransactionDate"
+          },
+          {
+            "value": "03",
+            "name": "TenderType"
+          },
+          {
+            "value": "140",
+            "name": "StoreID"
+          },
+          {
+            "value": "10",
+            "name": "DeviceID"
+          }
+        ],
+        "discount_codes": [],
+        "order_number": 21302,
+        "landing_site_ref": null,
+        "browser_ip": null,
+        "device_id": null,
+        "processed_at": "2017-01-05T17:04:10+00:00",
+        "source_url": null,
+        "source_identifier": null,
+        "location_id": null,
+        "user_id": null,
+        "reference": null,
+        "checkout_token": null,
+        "total_price_usd": "86.26",
+        "cancel_reason": null,
+        "cancelled_at": null,
+        "landing_site": null,
+        "referring_site": null,
+        "name": "MATDIR21302",
+        "buyer_accepts_marketing": false,
+        "cart_token": null,
+        "total_line_items_price": "55.00",
+        "total_discounts": "0.00",
+        "confirmed": true,
+        "financial_status": "paid",
+        "currency": "GBP",
+        "taxes_included": false,
+        "total_tax": "0.00",
+        "total_weight": 0,
+        "subtotal_price": "55.00",
+        "total_price": "69.99",
+        "test": false,
+        "gateway": "pos_mat",
+        "token": "d8f190e0f63e9b8ef4ce108013e3e341",
+        "note": null,
+        "number": 20302,
+        "updated_at": "2017-01-05T17:04:10+00:00",
+        "created_at": "2017-01-05T17:04:10+00:00",
+        "closed_at": null,
+        "email": "hubert.pompecki+oversized@matalandirect.com",
+        "id": 5033306055
+      }, {
+        "customer": {
+          "default_address": {
+            "default": true,
+            "country_name": "United Kingdom",
+            "country_code": "GB",
+            "province_code": null,
+            "name": "MRS JANE SMITH",
+            "phone": "0123456789",
+            "zip": "M23 1NL",
+            "country": "United Kingdom",
+            "province": null,
+            "city": ".",
+            "address2": "MANCHESTER",
+            "address1": "1 FAKE STREET",
+            "company": null,
+            "last_name": "SMITH",
+            "first_name": "JANE",
+            "id": 5949526663
+          },
+          "last_order_name": "MATDIR21303",
+          "tags": "",
+          "tax_exempt": false,
+          "multipass_identifier": null,
+          "verified_email": true,
+          "note": null,
+          "last_order_id": 5033306055,
+          "total_spent": "69.99",
+          "state": "disabled",
+          "orders_count": 1,
+          "last_name": "SMITH",
+          "first_name": "MRS JANE",
+          "updated_at": "2017-01-05T17:04:11+00:00",
+          "created_at": "2017-01-05T17:04:10+00:00",
+          "accepts_marketing": false,
+          "email": "hubert.pompecki+parcel@matalandirect.com",
+          "id": 5821644551
+        },
+        "refunds": [],
+        "fulfillments": [],
+        "shipping_address": {
+          "province_code": null,
+          "country_code": "GB",
+          "name": "MRS JANE SMITH",
+          "longitude": null,
+          "latitude": null,
+          "company": null,
+          "address2": "MANCHESTER",
+          "last_name": "SMITH",
+          "country": "United Kingdom",
+          "province": null,
+          "zip": "M23 1NL",
+          "city": ".",
+          "phone": "0123456789",
+          "address1": "1 FAKE STREET",
+          "first_name": "MRS JANE"
+        },
+        "shipping_lines": [
+          {
+            "tax_lines": [],
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "requested_fulfillment_service_id": null,
+            "phone": null,
+            "source": "pos_mat",
+            "code": "PARCEL",
+            "price": "14.99",
+            "title": "Standard large parcel delivery",
+            "id": 4165901383
+          }
+        ],
+        "line_items": [
+          {
+            "tax_lines": [],
+            "fulfillment_status": null,
+            "total_discount": "0.00",
+            "fulfillable_quantity": 1,
+            "product_exists": true,
+            "properties": [
+              {
+                "value": "1",
+                "name": "TransactionLineNumber"
+              }
+            ],
+            "variant_inventory_management": "shopify",
+            "name": "Quinn Corner Bookcase - Oak",
+            "gift_card": false,
+            "taxable": true,
+            "requires_shipping": true,
+            "product_id": 2321455809,
+            "fulfillment_service": "manual",
+            "vendor": "LPD",
+            "variant_title": null,
+            "sku": "EGLTIVCOROAK",
+            "grams": 0,
+            "price": "55.00",
+            "quantity": 1,
+            "title": "Quinn Corner Bookcase - Oak",
+            "variant_id": 7653114945,
+            "id": 9476018311
+          },
+          {
+            "tax_lines": [],
+            "fulfillment_status": null,
+            "total_discount": "0.00",
+            "fulfillable_quantity": 1,
+            "product_exists": true,
+            "properties": [
+              {
+                "value": "2",
+                "name": "TransactionLineNumber"
+              }
+            ],
+            "variant_inventory_management": null,
+            "name": "Standard large parcel delivery",
+            "gift_card": false,
+            "taxable": true,
+            "requires_shipping": false,
+            "product_id": 8114979975,
+            "fulfillment_service": "manual",
+            "vendor": "DeliveryType",
+            "variant_title": null,
+            "sku": "PARCEL",
+            "grams": 0,
+            "price": "0.00",
+            "quantity": 1,
+            "title": "Standard large parcel delivery",
+            "variant_id": 25926895559,
+            "id": 9476018375
+          }
+        ],
+        "order_status_url": null,
+        "contact_email": "hubert.pompecki+parcel@matalandirect.com",
+        "tags": "",
+        "tax_lines": [],
+        "fulfillment_status": null,
+        "source_name": "pos_mat",
+        "checkout_id": null,
+        "processing_method": "",
+        "payment_gateway_names": [
+          "pos_mat"
+        ],
+        "note_attributes": [
+          {
+            "value": "6746",
+            "name": "TransactionNumber"
+          },
+          {
+            "value": "05/01/2017",
+            "name": "TransactionDate"
+          },
+          {
+            "value": "03",
+            "name": "TenderType"
+          },
+          {
+            "value": "140",
+            "name": "StoreID"
+          },
+          {
+            "value": "10",
+            "name": "DeviceID"
+          }
+        ],
+        "discount_codes": [],
+        "order_number": 21302,
+        "landing_site_ref": null,
+        "browser_ip": null,
+        "device_id": null,
+        "processed_at": "2017-01-05T17:04:10+00:00",
+        "source_url": null,
+        "source_identifier": null,
+        "location_id": null,
+        "user_id": null,
+        "reference": null,
+        "checkout_token": null,
+        "total_price_usd": "86.26",
+        "cancel_reason": null,
+        "cancelled_at": null,
+        "landing_site": null,
+        "referring_site": null,
+        "name": "MATDIR21303",
+        "buyer_accepts_marketing": false,
+        "cart_token": null,
+        "total_line_items_price": "55.00",
+        "total_discounts": "0.00",
+        "confirmed": true,
+        "financial_status": "paid",
+        "currency": "GBP",
+        "taxes_included": false,
+        "total_tax": "0.00",
+        "total_weight": 0,
+        "subtotal_price": "55.00",
+        "total_price": "69.99",
+        "test": false,
+        "gateway": "pos_mat",
+        "token": "d8f190e0f63e9b8ef4ce108013e3e341",
+        "note": null,
+        "number": 20302,
+        "updated_at": "2017-01-05T17:04:10+00:00",
+        "created_at": "2017-01-05T17:04:10+00:00",
+        "closed_at": null,
+        "email": "hubert.pompecki+parcel@matalandirect.com",
+        "id": 5033306055
+      }, {
+        "customer": {
+          "default_address": {
+            "default": true,
+            "country_name": "United Kingdom",
+            "country_code": "GB",
+            "province_code": null,
+            "name": "MRS JANE SMITH",
+            "phone": "0123456789",
+            "zip": "M23 1NL",
+            "country": "United Kingdom",
+            "province": null,
+            "city": ".",
+            "address2": "MANCHESTER",
+            "address1": "1 FAKE STREET",
+            "company": null,
+            "last_name": "SMITH",
+            "first_name": "JANE",
+            "id": 5949526663
+          },
+          "last_order_name": "MATDIR21304",
+          "tags": "",
+          "tax_exempt": false,
+          "multipass_identifier": null,
+          "verified_email": true,
+          "note": null,
+          "last_order_id": 5033306055,
+          "total_spent": "69.99",
+          "state": "disabled",
+          "orders_count": 1,
+          "last_name": "SMITH",
+          "first_name": "MRS JANE",
+          "updated_at": "2017-01-05T17:04:11+00:00",
+          "created_at": "2017-01-05T17:04:10+00:00",
+          "accepts_marketing": false,
+          "email": "hubert.pompecki+pallet@matalandirect.com",
+          "id": 5821644551
+        },
+        "refunds": [],
+        "fulfillments": [],
+        "shipping_address": {
+          "province_code": null,
+          "country_code": "GB",
+          "name": "MRS JANE SMITH",
+          "longitude": null,
+          "latitude": null,
+          "company": null,
+          "address2": "MANCHESTER",
+          "last_name": "SMITH",
+          "country": "United Kingdom",
+          "province": null,
+          "zip": "M23 1NL",
+          "city": ".",
+          "phone": "0123456789",
+          "address1": "1 FAKE STREET",
+          "first_name": "MRS JANE"
+        },
+        "shipping_lines": [
+          {
+            "tax_lines": [],
+            "carrier_identifier": null,
+            "delivery_category": null,
+            "requested_fulfillment_service_id": null,
+            "phone": null,
+            "source": "pos_mat",
+            "code": "PALLET_2017-1-14",
+            "price": "14.99",
+            "title": "Standard large parcel delivery",
+            "id": 4165901383
+          }
+        ],
+        "line_items": [
+          {
+            "tax_lines": [],
+            "fulfillment_status": null,
+            "total_discount": "0.00",
+            "fulfillable_quantity": 1,
+            "product_exists": true,
+            "properties": [
+              {
+                "value": "1",
+                "name": "TransactionLineNumber"
+              }
+            ],
+            "variant_inventory_management": "shopify",
+            "name": "Quinn Corner Bookcase - Oak",
+            "gift_card": false,
+            "taxable": true,
+            "requires_shipping": true,
+            "product_id": 2321455809,
+            "fulfillment_service": "manual",
+            "vendor": "LPD",
+            "variant_title": null,
+            "sku": "EGLTIVCOROAK",
+            "grams": 0,
+            "price": "55.00",
+            "quantity": 1,
+            "title": "Quinn Corner Bookcase - Oak",
+            "variant_id": 7653114945,
+            "id": 9476018311
+          },
+          {
+            "tax_lines": [],
+            "fulfillment_status": null,
+            "total_discount": "0.00",
+            "fulfillable_quantity": 1,
+            "product_exists": true,
+            "properties": [
+              {
+                "value": "2",
+                "name": "TransactionLineNumber"
+              }
+            ],
+            "variant_inventory_management": null,
+            "name": "Standard large parcel delivery",
+            "gift_card": false,
+            "taxable": true,
+            "requires_shipping": false,
+            "product_id": 8114979975,
+            "fulfillment_service": "manual",
+            "vendor": "DeliveryType",
+            "variant_title": null,
+            "sku": "PALLET",
+            "grams": 0,
+            "price": "0.00",
+            "quantity": 1,
+            "title": "Standard large parcel delivery",
+            "variant_id": 25926895559,
+            "id": 9476018375
+          }
+        ],
+        "order_status_url": null,
+        "contact_email": "hubert.pompecki+pallet@matalandirect.com",
+        "tags": "",
+        "tax_lines": [],
+        "fulfillment_status": null,
+        "source_name": "pos_mat",
+        "checkout_id": null,
+        "processing_method": "",
+        "payment_gateway_names": [
+          "pos_mat"
+        ],
+        "note_attributes": [
+          {
+            "value": "6746",
+            "name": "TransactionNumber"
+          },
+          {
+            "value": "05/01/2017",
+            "name": "TransactionDate"
+          },
+          {
+            "value": "03",
+            "name": "TenderType"
+          },
+          {
+            "value": "140",
+            "name": "StoreID"
+          },
+          {
+            "value": "10",
+            "name": "DeviceID"
+          }
+        ],
+        "discount_codes": [],
+        "order_number": 21302,
+        "landing_site_ref": null,
+        "browser_ip": null,
+        "device_id": null,
+        "processed_at": "2017-01-05T17:04:10+00:00",
+        "source_url": null,
+        "source_identifier": null,
+        "location_id": null,
+        "user_id": null,
+        "reference": null,
+        "checkout_token": null,
+        "total_price_usd": "86.26",
+        "cancel_reason": null,
+        "cancelled_at": null,
+        "landing_site": null,
+        "referring_site": null,
+        "name": "MATDIR21304",
+        "buyer_accepts_marketing": false,
+        "cart_token": null,
+        "total_line_items_price": "55.00",
+        "total_discounts": "0.00",
+        "confirmed": true,
+        "financial_status": "paid",
+        "currency": "GBP",
+        "taxes_included": false,
+        "total_tax": "0.00",
+        "total_weight": 0,
+        "subtotal_price": "55.00",
+        "total_price": "69.99",
+        "test": false,
+        "gateway": "pos_mat",
+        "token": "d8f190e0f63e9b8ef4ce108013e3e341",
+        "note": null,
+        "number": 20302,
+        "updated_at": "2017-01-05T17:04:10+00:00",
+        "created_at": "2017-01-05T17:04:10+00:00",
+        "closed_at": null,
+        "email": "hubert.pompecki+pallet@matalandirect.com",
+        "id": 5033306055
+      }
+    ]
+  },
+  "vendorsForLeadTimes": [
+    "LPD",
+    "DeliveryType"
+  ]
+}
