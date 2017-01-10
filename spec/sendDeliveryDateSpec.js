@@ -20,7 +20,7 @@ describe("Sending delivery date emails", () => {
       body: input
     }
     this.cfg = {
-      serverToken: "token",
+      serverToken: "servertoken",
       postmarkHost: "https://api.postmarkapp.com",
       from: "hello@matalandirect.com"
     }
@@ -29,14 +29,20 @@ describe("Sending delivery date emails", () => {
     }
     spyOn(this.self, 'emit').and.callThrough()
 
+    let expectedTemplateData = {
+      deliveryDate: "14/1/2017",
+      firstName: "Jane",
+      orderNumber: "MATDIR21304"
+    }
+
     this.emailRequest = nock('https://api.postmarkapp.com')
     .post('/email', {
       "From": "hello@matalandirect.com",
       "To": "hubert.pompecki+pallet@matalandirect.com",
-      "Subject": "Test",
+      "Subject": "Your delivery is booked in for 14/1/2017",
       "Tag": "DeliveryDateEmail",
-      "HtmlBody": deliveryDateHTMLEmail(),
-      "TextBody": deliveryDateTextEmail() })
+      "HtmlBody": deliveryDateHTMLEmail(expectedTemplateData),
+      "TextBody": deliveryDateTextEmail(expectedTemplateData) })
     .reply(200, emailResponse);
 
     sendDeliveryDateEmail.call(this.self, this.msg, this.cfg)
